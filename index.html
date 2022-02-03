@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jisooh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- style -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" media="(max-width: 768px)" href="main_small.css">
+
+  <!-- script -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <div class="body__container">
+    <section class="sec-01">
+      <div class="container">
+        <!-- <img src="./image/logo.png" alt="logo" class="logo-icon"> -->
+        <h1 class="logo"><a href="./index.html">Jisooh</a></h1>
+        <h2 class="main-title">KIM&nbsp&nbsp&nbsp&nbspJI<br>SU&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp!</h2>
+        <div class="content">
+          <div class="me-image">
+            <img src="./image/me.png" alt="me" class="me-img">
+          </div>
+          <div class="text-box">
+            <h3>About</h3>
+            <p>Name: 김지수<br />
+              Phone: 010-6592-2611<br />
+              Email: apioui12@gmail.com
+            </p>
+            <span>...</span>
+          </div>
+        </div>
+        <ul class="media-icons">
+          <li><a href="https://github.com/" class="github-icon" target="_blank"><i class="fab fa-github"></i></a></li>
+          <!-- <a href="https://www.notion.so/Jisooh-631b9117514a47d2bd4f0aab1f60d72c" class="notion-icon" target="_blank"><img src="./assets/notion-icon.svg" alt="notion"></a> -->
+          <li><a href="https://www.notion.so/Jisooh-631b9117514a47d2bd4f0aab1f60d72c" class="notion-icon" target="_blank"><i class="fas fa-sticky-note"></i></a></li>
+          <li><a href="https://mail.google.com/" class="email-icon" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Projects</h3>
+        <div class="content">
+          <div class="todo-image">
+            <img
+              src="./image/todoList.png" alt="todolist">
+          </div>
+          <div class="info">
+            <h4 class="first-title">To-do List</h4>
+            <p>✓ React 사용<br />✓ 화이트모드/다크모드 구현<br />✓ useState를 사용하여 open 값을 관리</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sec-03">
+      <div class="container">
+        <h4 class="second-title">날씨 앱</h4>
+        <div class="content">
+          <div class="media-info">
+            <!-- <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i>Yutube</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li> -->
+          </div>
+          <div class="weather-image">
+            <!-- <img
+              src="./image/cat.jpg" alt="고양이"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // common reveal options to create reveal animations
+    // 애니메이션을 만드는 일반적인 표시 옵션 
+    ScrollReveal({
+      // reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    // targer elements, and specify options to create reveal animations
+    // 요소를 대상으로 지정, 애니메이션 옵션 지정
+    ScrollReveal().reveal('.main-title, .section-title', {
+      delay: 600,
+      origin: 'left'
+    });
+    ScrollReveal().reveal('.sec-01 .me-image, .info', {
+      delay: 500,
+      origin: 'bottom'
+    });
+    ScrollReveal().reveal('.text-box', {
+      delay: 700,
+      origin: 'right'
+    });
+    ScrollReveal().reveal('.media-icons li', {
+      delay: 600,
+      origin: 'bottom',
+      interval: 100
+    });
+
+    ScrollReveal().reveal('.sec-03 .image', {
+      delay: 600,
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.media-info li', {
+      delay: 400,
+      origin: 'left',
+      interval: 200
+    });
+  </script>
+</body>
+
+</html>

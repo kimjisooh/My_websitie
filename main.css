@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800');
+
+@font-face {
+  font-family: 'MinSans-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: #111222; */
+  background: #fffef1;
+}
+
+.logo {
+  position: absolute;
+  top: -5%;
+  left: 10%;
+  transform: translate(-50%, 0%);
+}
+
+
+.logo a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;  
+  text-indent: 100px;
+  width: 50px;
+  /* padding-left: 0px; */
+  background-image: url('./image/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+/* .logo-icon {
+  width: 50px;
+  height: 50px;
+} */
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #090306;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title {
+  color: #fee800;
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  line-height: 1;
+  font-size: 8em;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.content {
+  position: relative;
+  width: 1150px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .image {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.content .image img {
+  z-index: 111;
+  position: absolute;
+  top: 0;
+  left: 21.5%;
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.content .text-box {
+  z-index: 222;
+  /* background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px); */
+  margin-top: -70px;
+  padding: 40px;
+  max-width: 400px;
+  margin-left: 10vw;
+  /* border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px; */
+  transform: translate(-80px, 50px);
+}
+
+.content .text-box h3 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.content .text-box p {
+  font-size: 0.9em;
+  line-height: 30px;
+  font-family: 'MinSans-Regular';
+}
+
+.content .text-box span {
+  font-size: 2em;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.media-icons {
+  margin-top: 80px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.media-icons a {
+  color: #090306;
+  font-size: 1em;
+  margin: 60px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.github-icon i {
+  font-size: 2em;
+  color: #090306;
+  padding-right: 10px;
+}
+
+.notion-icon i {
+  font-size: 2em;
+  color: #090306;
+  padding-right: 10px;
+}
+
+.email-icon i {
+  font-size: 2em;
+  color: #090306;
+  padding-right: 10px;
+}
+
+.section-title {
+  font-size: 3em;
+  margin-bottom: 80px;
+}
+
+.info-title { 
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.content .todo-image img {
+  z-index: 111;
+  position: absolute;
+  top: -200%;
+  left: 12%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info {
+  width: 700px;
+  margin-left: 600px;
+}
+
+.media-info {
+  width: 400px;
+  margin-left: 50px;
+}
+
+.media-info li {
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.media-info li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.media-info li:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1) .media-info li:nth-child(5) {
+  padding-left: 100px;
+}
+
+.media-info li:nth-child(2) .media-info li:nth-child(4) {
+  padding-left: 50px;
+}
+
+.sec-03 {
+  margin-bottom: 100px;
+}
