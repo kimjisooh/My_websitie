@@ -21,6 +21,8 @@ html {
 body {
   /* background: #111222; */
   background: #fffef1;
+  width: 100vw;
+  height: 100vh;
 }
 
 .logo {
@@ -84,7 +86,7 @@ section {
 
 .content {
   position: relative;
-  width: 1150px;
+  width: 100vw;
   display: flex;
   margin-top: 40px;
   justify-content: center;
@@ -98,7 +100,7 @@ section {
   overflow: hidden;
 }
 
-.content .image img {
+.content .me-image img {
   z-index: 111;
   position: absolute;
   top: 0;
